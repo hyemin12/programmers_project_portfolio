@@ -107,9 +107,11 @@ header {
 @keyframes slideUp {
   0% {
     transform: translateY(20px);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 .item {
@@ -119,6 +121,7 @@ header {
   animation: slideUp 1s ease-out forwards;
   position: relative;
   transform: translateY(20px);
+  opacity: 0;
 }
 .item:nth-child(1) {
   animation-delay: 0.1s;
