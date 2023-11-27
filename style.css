@@ -94,7 +94,6 @@ header {
   display: inline-block;
   border-bottom: 3px solid var(--point-color);
   font-weight: bold;
-  /* font-size: 1.38em; */
 }
 
 /* LIST */
@@ -117,9 +116,9 @@ header {
   flex-basis: 33.3%;
   padding: 0 15px;
   margin-bottom: 24px;
-  animation-name: slideUp;
-  animation-duration: 1s;
-  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: slideUp 1s ease-out forwards;
+  position: relative;
+  transform: translateY(20px);
 }
 .item:nth-child(1) {
   animation-delay: 0.1s;
